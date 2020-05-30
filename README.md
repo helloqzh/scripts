@@ -1,6 +1,6 @@
 ### nhk_easy_news_downloader
 
-https://www3.nhk.or.jp/news/easy/ 新闻下载，官网只留大要一个月的记录
+https://www3.nhk.or.jp/news/easy/ 新闻下载，官网只留大概一个月的记录
 
 会下载内容，图片以及音频
 
