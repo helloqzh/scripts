@@ -96,7 +96,10 @@ if __name__ == "__main__":
     ALI_DOMAIN = os.getenv("ALI_DOMAIN")
     ALI_DNS_USER_MAIL = os.getenv("ALI_DNS_USER_MAIL")
 
-    logging.basicConfig(filename="ali_dynamic_dns.log",
+    # 共通配置
+    LOG_OUT_DIRECTORY = os.getenv("LOG_OUT_DIRECTORY")
+
+    logging.basicConfig(filename=os.path.join(LOG_OUT_DIRECTORY, "ali_dynamic_dns.log"),
                         filemode="a",
                         format="%(asctime)s %(filename)s(%(lineno)d):%(levelname)s:%(message)s",
                         datefmt="%Y-%m-%d %H:%M:%S",
