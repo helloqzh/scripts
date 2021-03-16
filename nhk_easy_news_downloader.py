@@ -70,7 +70,7 @@ def parse_news(news: dict, out_folder: str):
                 f.write(requests.get(img_uri).content)
 
         # 文本
-        with open(news_file, "w") as f:
+        with open(news_file, "w", encoding="utf-8") as f:
             print("<!DOCTYPE html>", file=f)
             print("<html lang='ja'>", file=f)
             print("<head><meta charset='utf-8'></head>", file=f)
